@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icons8-dice-66.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Jeu de dé</title>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center mt-3">
+      <button
+        id="new-game"
+        class="btn d-flex align-items-center text-uppercase"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 50 50"
+          width="30px"
+          height="30px"
+          style="margin-right: 10px"
+        >
+          <g id="surface55996903">
+            <path
+              style="
+                stroke: none;
+                fill-rule: nonzero;
+                fill: rgb(86.274511%, 20.784314%, 27.058825%);
+                fill-opacity: 1;
+              "
+              d="M 25 2 C 12.308594 2 2 12.308594 2 25 C 2 37.691406 12.308594 48 25 48 C 37.691406 48 48 37.691406 48 25 C 48 12.308594 37.691406 2 25 2 Z M 25 4 C 36.609375 4 46 13.390625 46 25 C 46 36.609375 36.609375 46 25 46 C 13.390625 46 4 36.609375 4 25 C 4 13.390625 13.390625 4 25 4 Z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 Z M 24 13 "
+            />
+          </g>
+        </svg>
+        new games
+      </button>
+    </div>
+    <div class="container">
+      <section class="d-flex justify-content-around mt-5">
+        <div><p id="player1" class="display-4">player 1</p></div>
+        <div><p id="player2" class="display-4">player 2</p></div>
+      </section>
+      <section
+        class="d-flex justify-content-around align-items-center mt-5 mb-5"
+      >
+        <p id="score-player1" class="display-6">0</p>
+        <div id="dice-face">
+          <img
+            id="dice"
+            class="shadow"
+            src="images/dice-six-faces-one.svg"
+            alt=""
+            width="150px"
+            height="150px"
+          />
+        </div>
+        <p id="score-player2" class="display-6">0</p>
+      </section>
+      <section class="d-flex justify-content-around container-fluid mt-5">
+        <div class="text-center bg-danger p-2 pb-0 shadow mb-3">
+          <p class="display-6">Current</p>
+          <p id="round-player1" class="text-light display-6">0</p>
+        </div>
+        <div class="d-flex flex-column">
+          <button class="btn" id="btn-roll">
+            <img
+              src="images/icons8-refresh.svg"
+              alt="refresh"
+              width="30px"
+              height="30px"
+              style="margin-right: 10px"
+            />
+            ROLL DICE
+          </button>
+          <button class="btn" id="btn-hold">
+            <img
+              src="images/download-svgrepo-com.svg"
+              alt="download"
+              width="30px"
+              height="30px"
+              style="margin-right: 10px"
+            />
+            HOLD
+          </button>
+        </div>
+        <div class="text-center bg-danger p-2 pb-0 shadow mb-3">
+          <p class="display-6">Current</p>
+          <p id="round-player2" class="text-light display-6">0</p>
+        </div>
+      </section>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
